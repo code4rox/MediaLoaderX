@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.11241007194244604" />
+        <entry key="app/src/main/res/drawable-v24/ic_play.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_audio.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_files.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_folder.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_play.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.30648148148148147" />
+        <entry key="app/src/main/res/layout/folder_view.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/layout/fragment_all_files.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/fragment_all_files2.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/item_view.xml" value="0.3104166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

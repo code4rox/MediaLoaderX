@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MediaLoaderX</string>
+    <string name="tab_images">Images</string>
+    <string name="tab_video">Video</string>
+    <string name="tab_file">Files</string>
+    <string name="tab_audio">Audio</string>
+    <string name="tab_folders">Folders</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
