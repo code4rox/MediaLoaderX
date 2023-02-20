@@ -29,10 +29,9 @@ add permission
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
 
-## Default Loader
-**Load Images**
+## USE
+**Load all Images and Images Folders**
 
-load images folders
 <br>
 
 ```kotlin
@@ -47,7 +46,30 @@ load images folders
         })
 ```
 <br>
-load all images
+
+**Load all Audios and Audios Folders**
+
+<br>
+
+```kotlin
+      AudioLoaderX(context).getAllAudios({ audios ->
+
+            //  all audios list
+
+        }, { audioFolders ->
+
+            // all audios folder list
+
+        })
+
+```
+
+
+
+<br>
+
+**Load all Videos and Videos Folders**
+
 <br>
 
 ```kotlin
@@ -61,4 +83,22 @@ load all images
 
         })
 ```
-**Load Videos**
+<br>
+
+**Load all Files and Files Folders**
+
+<br>
+
+```kotlin
+   FileLoaderX(context).getAllFiles  ({ files ->
+
+            //  all files list
+
+        }, { fileFolders ->
+
+            // all files folder list
+
+        })
+
+```
+
