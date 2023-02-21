@@ -4,7 +4,7 @@
 MediaLoaderX
 ====
 
-In this library you can get all 
+In this library you can get fast
 
 - Images 
 - Audios
@@ -32,9 +32,7 @@ dependencies {
 }
 ```
 
-
-
-add permission
+add permission and allow runtime 
 
 ```xml
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
