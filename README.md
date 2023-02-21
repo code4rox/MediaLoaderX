@@ -1,3 +1,6 @@
+[![](https://jitpack.io/v/code4rox/MediaLoaderX.svg)](https://jitpack.io/#code4rox/MediaLoaderX)
+
+
 MediaLoaderX
 ====
 
@@ -24,7 +27,7 @@ repositories {
 ```gradle
 dependencies {
 
-        implementation 'com.github.code4rox:MediaLoaderX:1.0'
+        implementation 'com.github.code4rox:MediaLoaderX:1.0.0'
         
 }
 ```
