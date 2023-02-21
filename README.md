@@ -1,6 +1,14 @@
 MediaLoaderX
 ====
-Use this library , you can load pictures,videos,audios very fast in Phone Storage.
+
+In this library you can get all 
+
+- Images 
+- Audios
+- Videos
+- Files
+
+using ```Media Store API``` 
 
 # Dependency
 
@@ -30,7 +38,7 @@ add permission
 ```
 
 ## USE
-**Load all Images and Images Folders**
+- Load all Images and Images Folders
 
 <br>
 
@@ -47,7 +55,7 @@ add permission
 ```
 <br>
 
-**Load all Audios and Audios Folders**
+- Load all Audios and Audios Folders
 
 <br>
 
@@ -68,7 +76,7 @@ add permission
 
 <br>
 
-**Load all Videos and Videos Folders**
+- Load all Videos and Videos Folders
 
 <br>
 
@@ -85,9 +93,15 @@ add permission
 ```
 <br>
 
-**Load all Files and Files Folders**
+- Load all Files and Files Folders
 
 <br>
+
+In android 11 and above you need to give  **MANAGE_EXTERNAL_STORAGE**  permission to get all files othervoise this give only media files.
+and don't forget add permission in menifest    ```<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />```
+
+**NOTE: MANAGE_EXTERNAL_STORAGE permission is only granted to specific app types, such as file managers or antivirus apps, and you'll need to justify its use when publishing on the Google Play Store.**
+
 
 ```kotlin
    FileLoaderX(context).getAllFiles  ({ files ->
@@ -101,4 +115,69 @@ add permission
         })
 
 ```
+ 
+## Advance Use
 
+if you want get all images or all folders only use like this 
+
+
+
+```kotlin
+  ImageLoaderX(context).getAllImages({ images ->
+            //  all images list  
+       )
+```
+
+
+```kotlin
+  ImageLoaderX(context).getAllImages({ imageFolders ->
+            // all images folder list
+        })
+```
+
+- Selection , Sorting and Filter
+
+```kotlin 
+  VideoLoaderX(this).apply {
+
+            // Show only videos that are at least 5 minutes in duration.
+            mSelection = "${MediaStore.Video.Media.DURATION} >= ?"
+            mSelectionArgs = arrayOf(TimeUnit.MILLISECONDS.convert(5, TimeUnit.MINUTES).toString())
+
+            // if you want sort
+            mSortOrder = MediaStore.Images.Media.DATE_ADDED + " DESC"
+
+            // if you want filter
+            mFilterVideoExt = arrayOf("mp4", "mkv")
+
+        }.getAllVideos({
+            // all videos list
+        }, {
+            // all videos folder list
+        })
+
+```
+
+
+
+## Exception handling
+
+and if you have any kind of exception you can deduct like this 
+
+
+
+```kotlin
+  ImageLoaderX(context).getAllImages({ images ->
+  
+            //  all images list 
+            
+        }, { imageFolders ->
+        
+            // all images folder list
+            
+        },{ error ->
+        
+           // error message show here
+        
+        })
+```
