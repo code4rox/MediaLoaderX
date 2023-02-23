@@ -69,6 +69,14 @@ add permission and allow runtime
 
             // all audios folder list
 
+        } , { artists ->
+           
+            // all artist with songs
+            
+        } , { albums ->
+        
+           // all albums with songs
+        
         })
 
 ```
