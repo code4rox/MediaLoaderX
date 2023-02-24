@@ -154,7 +154,7 @@ if you want get all images or all folders only use like this
             mSelectionArgs = arrayOf(TimeUnit.MILLISECONDS.convert(5, TimeUnit.MINUTES).toString())
 
             // if you want sort
-            mSortOrder = MediaStore.Images.Media.DATE_ADDED + " DESC"
+            mSortOrder = MediaStore.Video.Media.DATE_ADDED + " DESC"
 
             // if you want filter
             mFilterVideoExt = arrayOf("mp4", "mkv")
